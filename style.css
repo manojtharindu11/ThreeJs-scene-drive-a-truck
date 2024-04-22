@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+}
+
+#header {
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: all 0.15s ease;
+}
+
+#container3D {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.arrow-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 90vh;
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 6px;
+    padding: 8px 20px;
+}
+
+.arrow-container button,
+.backBtn {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.vehicleButton {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.vehicleButton button,
+.backBtn {
+    transition: all 0.15s ease;
+}
+
+.vehicleButton button:hover,
+.backBtn:hover {
+    color: rgb(118, 94, 185);
+}
+
+.selectBtn {
+    color: rgb(60, 116, 116);
+    position: absolute;
+    top: -15vh;
+    font-size: 48px;
+    animation: textAnimation 2s ease forwards;
+}
+
+.backBtn {
+    position: absolute;
+    left: 1vw;
+    top: -88vh;
+    padding: 2px 5px;
+}
+
+@keyframes textAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
